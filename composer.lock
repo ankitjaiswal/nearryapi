@@ -4,73 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "358217ee3ffebdb4549ead1c5bb09b2c",
+    "content-hash": "dbe1f18a33eeaf81097c099621d0ce86",
     "packages": [
-        {
-            "name": "ankitjaiswal/laravel-langman",
-            "version": "v1.3.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ankitjaiswal/laravel-langman.git",
-                "reference": "27cdaa7eca53a0fe7a54c413285de6112f3166de"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ankitjaiswal/laravel-langman/zipball/27cdaa7eca53a0fe7a54c413285de6112f3166de",
-                "reference": "27cdaa7eca53a0fe7a54c413285de6112f3166de",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/console": "~5.1",
-                "illuminate/filesystem": "~5.1",
-                "illuminate/support": "~5.1",
-                "php": "^5.5.9 || ^7.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "~0.9.4",
-                "orchestra/database": "~3.0",
-                "orchestra/testbench": "~3.0",
-                "phpunit/phpunit": "^4.8 || ^5.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Themsaid\\Langman\\LangmanServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Themsaid\\Langman\\": "src"
-                },
-                "classmap": [
-                    "tests"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mohamed Said",
-                    "email": "theMohamedSaid@gmail.com",
-                    "homepage": "https://themsaid.github.io"
-                }
-            ],
-            "description": "Manage language files with ease.",
-            "homepage": "https://github.com/themsaid/laravel-langman",
-            "keywords": [
-                "laravel",
-                "localization",
-                "multilingual"
-            ],
-            "support": {
-                "source": "https://github.com/ankitjaiswal/laravel-langman/tree/v1.3.5"
-            },
-            "time": "2017-08-06T15:02:00+00:00"
-        },
         {
             "name": "anlutro/l4-settings",
             "version": "v0.7.3",
