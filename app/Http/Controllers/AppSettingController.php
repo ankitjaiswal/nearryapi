@@ -18,7 +18,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Str;
 use RachidLaasri\LaravelInstaller\Helpers\MigrationsHelper;
-use Themsaid\Langman\Manager;
+//use Ankitjaiswal\Langman\Manager;
 
 class AppSettingController extends Controller
 {
@@ -41,7 +41,7 @@ class AppSettingController extends Controller
         $this->userRepository = $userRepo;
         $this->roleRepository = $roleRepo;
         $this->currencyRepository = $currencyRepository;
-        $this->langManager = new Manager(new Filesystem(), config('langman.path'), []);
+//        $this->langManager = new Manager(new Filesystem(), config('langman.path'), []);
         $this->uploadRepository = $uploadRepository;
     }
 
@@ -98,7 +98,7 @@ class AppSettingController extends Controller
     public function syncTranslation(Request $request)
     {
         if (!env('APP_DEMO', false)) {
-            Artisan::call('langman:sync');
+//            Artisan::call('langman:sync');
         } else {
             Flash::warning('This is only demo app you can\'t change this section ');
         }

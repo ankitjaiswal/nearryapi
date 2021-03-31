@@ -4,7 +4,7 @@ namespace Deployer;
 require 'recipe/laravel.php';
 
 // Project name
-set('application', 'api.nearry.com');
+set('application', 'nearry.com');
 
 // Project repository
 set('repository', 'git@github.com:ankitjaiswal/nearryapi.git');
@@ -25,7 +25,7 @@ add('writable_dirs', []);
 host('167.71.234.167')
     ->user('deployer')
     ->identityFile('~/.ssh/nearry')
-    ->set('deploy_path', '/var/www/api.nearry.com/html');
+    ->set('deploy_path', '/var/www/nearry.com/html');
     
 // Tasks
 
