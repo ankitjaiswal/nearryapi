@@ -113,7 +113,7 @@ return [
 
     'hosts' => [
         '167.71.234.167' => [
-            'deploy_path' => '/var/www/api.nearry.com/html',
+            'deploy_path' => '/var/www/nearry.com/html',
             'user' => 'deployer',
             'configFile'   => '~/.ssh/config',
             'identityFile' => '~/.ssh/nearry',
