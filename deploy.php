@@ -4,7 +4,7 @@ namespace Deployer;
 require 'recipe/laravel.php';
 
 // Project name
-set('application', 'nearry.com');
+set('application', 'api.nearry.com');
 
 // Project repository
 set('repository', 'git@github.com:ankitjaiswal/nearryapi.git');

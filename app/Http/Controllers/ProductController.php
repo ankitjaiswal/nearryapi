@@ -101,7 +101,9 @@ class ProductController extends Controller
      */
     public function store(CreateProductRequest $request)
     {
+
         $input = $request->all();
+        dd($input);
         $customFields = $this->customFieldRepository->findByField('custom_field_model', $this->productRepository->model());
         try {
             $product = $this->productRepository->create($input);
@@ -187,6 +189,7 @@ class ProductController extends Controller
      */
     public function update($id, UpdateProductRequest $request)
     {
+//        dd($request);
         $this->productRepository->pushCriteria(new ProductsOfUserCriteria(auth()->id()));
         $product = $this->productRepository->findWithoutFail($id);
 
@@ -198,6 +201,8 @@ class ProductController extends Controller
         $customFields = $this->customFieldRepository->findByField('custom_field_model', $this->productRepository->model());
         try {
             $product = $this->productRepository->update($input, $id);
+
+//            dd($product);
 
             if (isset($input['image']) && $input['image'] && is_array($input['image'])) {
                 foreach ($input['image'] as $fileUuid){

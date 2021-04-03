@@ -61,6 +61,7 @@ class ProductAPIController extends Controller
      */
     public function index(Request $request)
     {
+//        dd($request);
         try{
             $this->productRepository->pushCriteria(new RequestCriteria($request));
             $this->productRepository->pushCriteria(new LimitOffsetCriteria($request));
@@ -79,7 +80,7 @@ class ProductAPIController extends Controller
             return $this->sendError($e->getMessage());
         }
 
-        return $this->sendResponse($products->toArray(), 'Products retrieved successfully');
+        return $this->sendResponse($products->toArray(), 'Single Products retrieved successfully');
     }
 
     /**
